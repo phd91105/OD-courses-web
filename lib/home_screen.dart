@@ -113,27 +113,28 @@ class HomeScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 120),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                'Courses',
-                                style: GoogleFonts.getFont(
-                                  'Montserrat',
-                                  fontSize: 28,
-                                  fontWeight: FontWeight.w400,
-                                  color: titleColor,
-                                ),
-                              ),
-                              Icon(
-                                Feather.more_horizontal,
-                                size: 27,
+                        Row(
+                          children: [
+                            Spacer(),
+                            Text(
+                              'Courses',
+                              style: GoogleFonts.getFont(
+                                'Montserrat',
+                                fontSize: 28,
+                                fontWeight: FontWeight.w400,
                                 color: titleColor,
                               ),
-                            ],
-                          ),
+                            ),
+                            Spacer(
+                              flex: 8,
+                            ),
+                            Icon(
+                              Feather.more_horizontal,
+                              size: 27,
+                              color: titleColor,
+                            ),
+                            Spacer(),
+                          ],
                         ),
                         SizedBox(
                           height: 37,
@@ -207,14 +208,14 @@ class CourseItem extends StatelessWidget {
       ),
       child: Stack(
         children: [
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Container(
-              height: 60,
-              width: 300,
-              color: Colors.greenAccent,
-            ),
-          ),
+          // Align(
+          //   alignment: Alignment.bottomCenter,
+          //   child: Container(
+          //     height: 60,
+          //     width: 300,
+          //     color: Colors.greenAccent,
+          //   ),
+          // ),
         ],
       ),
     );
